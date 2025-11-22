@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP.CO - Fashion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-  <div class="header__logo logo">
-    <a href="/" class="logo__link">SHOP.CO</a>
-  </div>
 
-  <nav class="header__nav nav">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="#shop" class="nav__link">Shop <span class="nav__arrow">▼</span></a>
-      </li>
-      <li class="nav__item">
-        <a href="#On_Sale" class="nav__link">On Sale</a>
-      </li>
-      <li class="nav__item">
-        <a href="#New_Arrivals" class="nav__link">New Arrivals</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__link">Brands</a>
-      </li>
-    </ul>
-  </nav>
+<div class="container">
+  <header class="header">
+    <div class="header__logo logo">
+      <a href="/" class="logo__link">SHOP.CO</a>
+    </div>
 
-  <div class="header__search search">
-    <form class="search__form">
-      <button type="submit" class="search__button">
-        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-        </svg>
-      </button>
-      <input type="text" placeholder="Search for products..." class="search__input">
-    </form>
-  </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#shop" class="nav__link">Shop <span class="nav__arrow">▼</span></a>
+        </li>
+        <li class="nav__item">
+          <a href="#On_Sale" class="nav__link">On Sale</a>
+        </li>
+        <li class="nav__item">
+          <a href="#New_Arrivals" class="nav__link">New Arrivals</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Brands</a>
+        </li>
+      </ul>
+    </nav>
 
-  <div class="header__account account">
-    <a href="account__link">
-        <img src="cart_icon.svg" alt="cart_icon">
-    </a>
-    <a href="account__link">
-        <img src="person_icon.svg" alt="person icon">
-    </a>
-  </div>
-</header>
+    <div class="header__search search">
+      <form class="search__form">
+        <button type="submit" class="search__button">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+        <input type="text" placeholder="Search for products..." class="search__input">
+      </form>
+    </div>
 
+    <div class="header__account account">
+      <a href="#" class="account__link">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4IDE4QzE4IDIwLjIxODMgMTYuMjE4MyAyMiAxNCAyMkMxMS43ODQyIDIyIDEwIDE4LjU0MDcgMTAgMTguNTQwN0MxMCAxOC41NDA3IDguMjE4MjcgMjIgNiAyMkMzLjc4MTc0IDIyIDIgMjAuMjE4MyAyIDE4QzIgMTUuNzgxNyAzLjc4MTc0IDE0IDYgMTRDNy40NTkzIDE0IDggMTUuNTQwNyA4IDE1LjU0MDdDOC4wMDAwMSAxNS41NDA3IDggMTQgMTAgMTRDMTIuMjE4MyAxNCAxNCAxNS43ODE3IDE0IDE4QzE0IDIwLjIxODMgMTUuNzgxNyAyMiAxOCAyMkMxOC4yMTg0IDIyIDE4IDE4IDE4IDE4WiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTggNkMxOCA0LjM0MzE1IDE2LjY1NjkgMyAxNSAzQzEzLjM0MzEgMyAxMiA0LjM0MzE1IDEyIDZDMTIgNy42NTY4NSAxMy4zNDMxIDkgMTUgOUMxNi42NTY5IDkgMTggNy42NTY4NSAxOCA2WiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTQgMTJDNiAxMiA2IDQgNiA0IiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=" alt="Cart">
+      </a>
+      <a href="#" class="account__link">
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDNy41ODIgMiA0IDUuNTgyIDQgMTBDMCAxNC40MTggNCAxOCA4IDE4QzkgMTggMTAgMTcuNjQyIDEwIDE3LjE4M0MxMC44MzYgMTcuNjM2IDExLjQwNyAxNy45MjQgMTIgMTcuOTI0QzEyLjU5MyAxNy45MjQgMTMuMTY0IDE3LjYzNiAxNCAxNy4xODNDMTQgMTcuNjQyIDE1IDE4IDE2IDE4QzIwIDE4IDI0IDE0LjQxOCAyNCAxMEMyNCA1LjU4MiAyMC40MTggMiAxNiAyQzE0LjQxOCAyIDEzLjI3OCAyLjYzNjE1IDEyLjU0NiAzLjgzNjE1QzEyLjI3NiAzLjU2NjE1IDEyLjAxIDEzIDEyIDIgWiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="Account">
+      </a>
+    </div>
+  </header>
 
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">FIND CLOTHES THAT MATCH YOUR STYLE</h1>
+      <p class="hero__description">
+        Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+      </p>
+      <button class="hero__btn btn btn--primary">Shop Now</button>
 
+      <div class="stats">
+        <div class="stats__item">
+          <span class="stats__value">200+</span>
+          <span class="stats__label">International Brands</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__value">2,000+</span>
+          <span class="stats__label">High-Quality Products</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__value">30,000+</span>
+          <span class="stats__label">Happy Customers</span>
+        </div>
+      </div>
+    </div>
 
+    <div class="hero__media">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2Y1ZjVmNSIvPgo8dGV4dCB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4IiBmaWxsPSIjY2NjIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCI+SGVybyBQZXJzb248L3RleHQ+Cjwvc3ZnPgo=" alt="Fashion couple">
+    </div>
+  </section>
+</div>
 
 </body>
 </html>
